@@ -359,8 +359,9 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       const expanded = btn.getAttribute("aria-expanded") === "true";
       const answer = btn.nextElementSibling;
+      if (!answer) return;
       btn.setAttribute("aria-expanded", String(!expanded));
-      answer.style.maxHeight = expanded ? null : answer.scrollHeight + "px";
+      answer.style.maxHeight = expanded ? "" : `${answer.scrollHeight}px`;
     });
   });
 
