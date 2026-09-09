@@ -368,10 +368,23 @@ document.addEventListener("DOMContentLoaded", () => {
   /* --- Formulario de contacto (visual, sin backend) --- */
   const form = document.getElementById("contactForm");
   if (form) {
+    const successMsg = document.getElementById("formSuccess");
+    const resetBtn = document.getElementById("formResetBtn");
+    const formElements = Array.from(form.children).filter(el => el.tagName !== 'DIV');
+    
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-      document.getElementById("formNote").hidden = false;
+      formElements.forEach(el => el.hidden = true);
+      successMsg.hidden = false;
     });
+
+    if (resetBtn) {
+      resetBtn.addEventListener("click", () => {
+        form.reset();
+        formElements.forEach(el => el.hidden = false);
+        successMsg.hidden = true;
+      });
+    }
   }
 
   /* --- Asistente / chat mock en Inicio --- */

@@ -8,7 +8,7 @@
       name="description"
       content="Contacto, entradas e inscripción de expositores para ExpoJuy 2026."
     />
-    <link rel="icon" href="assets/img/logo-iso.png" type="image/png" />
+    <link rel="icon" href="assets/img/expojuy26_isologotipo.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -21,7 +21,7 @@
           aria-label="ExpoJuy 2026 - Inicio"
         >
           <img
-            src="assets/img/logo-horizontal.png"
+            src="assets/img/expojuy26_horizontal.png"
             alt="ExpoJuy 2026 - Conectando países, creando oportunidades"
           />
         </a>
@@ -85,10 +85,11 @@
             <button type="submit" class="btn btn-primary">
               Enviar consulta
             </button>
-            <p class="form-note" id="formNote" hidden>
-              ¡Gracias! Esto es una maqueta — en el sitio real, acá se
-              confirmaría el envío.
-            </p>
+            <div id="formSuccess" hidden>
+              <h3 style="color: var(--violet); margin-bottom: 0.5rem">¡Mensaje enviado!</h3>
+              <p>Gracias por escribirnos. El equipo de ExpoJuy 2026 te va a responder a la brevedad.</p>
+              <button type="button" class="btn btn-ghost" style="margin-top: 1rem" id="formResetBtn">Enviar otro mensaje</button>
+            </div>
           </form>
           <div class="contact-info">
             <div class="info-block">
@@ -170,7 +171,7 @@
         <div class="footer-grid">
           <div>
             <img
-              src="assets/img/logo-horizontal.png"
+              src="assets/img/expojuy26_horizontal.png"
               alt="ExpoJuy 2026"
               style="
                 height: 30px;
@@ -185,7 +186,7 @@
             <div class="organiza-row">
               <span>Organiza</span>
               <img
-                src="assets/img/logo-camcomext.png"
+                src="assets/img/logo_camcomext.png"
                 alt="Cámara de Comercio Exterior de Jujuy"
                 style="height: 28px; filter: brightness(0) invert(1)"
               />
