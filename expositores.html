@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expositores · ExpoJuy 2026</title>
+    <meta
+      name="description"
+      content="Directorio de expositores de ExpoJuy 2026, filtrable por rubro."
+    />
+    <link
+      rel="icon"
+      href="assets/img/expojuy26_isologotipo.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="header-row">
+        <a
+          class="logo-link"
+          href="index.html"
+          aria-label="ExpoJuy 2026 - Inicio"
+        >
+          <img
+            src="assets/img/expojuy26_horizontal.png"
+            alt="ExpoJuy 2026 - Conectando países, creando oportunidades"
+          />
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html">Inicio</a
+          ><a href="expositores.html" aria-current="page">Expositores</a
+          ><a href="agenda.html">Agenda</a
+          ><a href="mapa.html">Mapa del predio</a
+          ><a href="sponsors.html">Sponsors</a
+          ><a href="noticias.html">Noticias</a
+          ><a href="contacto.html">Contacto</a>
+          <a class="nav-cta" href="contacto.html#entradas"
+            >Conseguí tu entrada</a
+          >
+        </nav>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-head">
+        <div class="container">
+          <div class="eyebrow">
+            <span class="blockmark"
+              ><span></span><span></span><span></span
+            ></span>
+            Directorio
+          </div>
+          <h1>Expositores</h1>
+          <p class="lede">
+            Buscá por nombre o filtrá por rubro. Cada ficha te muestra dónde
+            está el stand en el mapa del predio.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="filter-bar">
+            <input
+              type="search"
+              id="expoSearch"
+              class="search-input"
+              placeholder="Buscar expositor por nombre..."
+            />
+            <div class="chip-row" id="chipRow">
+              <button class="chip is-active" data-filter="todos">Todos</button>
+              <button class="chip" data-filter="agroindustria">
+                Agroindustria
+              </button>
+              <button class="chip" data-filter="mineria">
+                Minería y litio
+              </button>
+              <button class="chip" data-filter="tecnologia">Tecnología</button>
+              <button class="chip" data-filter="turismo">Turismo</button>
+              <button class="chip" data-filter="industria">Industria</button>
+            </div>
+          </div>
+
+          <div class="expo-grid" id="expoGrid">
+            <!-- las fichas se generan con JS a partir de datos mock, ver js/main.js -->
+          </div>
+          <p id="expoEmpty" class="empty-state" hidden>
+            No encontramos expositores con ese filtro. Probá con otro rubro.
+          </p>
+        </div>
+      </section>
+
+      <div class="expo-modal" id="expoModal" hidden>
+        <div class="expo-modal-card">
+          <button
+            class="expo-modal-close"
+            id="expoModalClose"
+            aria-label="Cerrar"
+          >
+            ×
+          </button>
+          <div id="expoModalBody"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <img
+              src="assets/img/expojuy26_horizontal.png"
+              alt="ExpoJuy 2026"
+              style="
+                height: 30px;
+                filter: brightness(0) invert(1);
+                margin-bottom: 1rem;
+              "
+            />
+            <p>
+              La feria de innovación, tecnología y producción del Norte
+              Argentino.
+            </p>
+            <div class="organiza-row">
+              <span>Organiza</span>
+              <img
+                src="assets/img/logo_camcomext.png"
+                alt="Cámara de Comercio Exterior de Jujuy"
+                style="height: 28px; filter: brightness(0) invert(1)"
+              />
+            </div>
+          </div>
+          <div>
+            <h4>Explorar</h4>
+            <ul>
+              <li><a href="expositores.html">Expositores</a></li>
+              <li><a href="agenda.html">Agenda de actividades</a></li>
+              <li><a href="mapa.html">Mapa del predio</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Participar</h4>
+            <ul>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li>
+                <a href="contacto.html#expositor">Sumate como expositor</a>
+              </li>
+              <li><a href="contacto.html#faq">Preguntas frecuentes</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Sede</h4>
+            <p>
+              Predio Ferial de Jujuy<br />Libertador General San Martín,
+              Jujuy<br />Argentina
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© 2026 ExpoJuy — Cámara de Comercio Exterior de Jujuy. Propuesta
+            conceptual — Desafío Digital ExpoJuy 2026.</span
+          >
+          <div class="social-row">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

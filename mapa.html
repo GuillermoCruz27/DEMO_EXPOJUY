@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa del predio · ExpoJuy 2026</title>
+    <meta
+      name="description"
+      content="Mapa interactivo del predio ferial de ExpoJuy 2026."
+    />
+    <link
+      rel="icon"
+      href="assets/img/expojuy26_isologotipo.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="header-row">
+        <a
+          class="logo-link"
+          href="index.html"
+          aria-label="ExpoJuy 2026 - Inicio"
+        >
+          <img
+            src="assets/img/expojuy26_horizontal.png"
+            alt="ExpoJuy 2026 - Conectando países, creando oportunidades"
+          />
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html">Inicio</a
+          ><a href="expositores.html">Expositores</a
+          ><a href="agenda.html">Agenda</a
+          ><a href="mapa.html" aria-current="page">Mapa del predio</a
+          ><a href="sponsors.html">Sponsors</a
+          ><a href="noticias.html">Noticias</a
+          ><a href="contacto.html">Contacto</a>
+          <a class="nav-cta" href="contacto.html#entradas"
+            >Conseguí tu entrada</a
+          >
+        </nav>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-head">
+        <div class="container">
+          <div class="eyebrow">
+            <span class="blockmark"
+              ><span></span><span></span><span></span
+            ></span>
+            Predio ferial
+          </div>
+          <h1>Mapa del predio</h1>
+          <p class="lede">
+            Tocá un stand para ver quién expone ahí. El mapa está conectado al
+            directorio de expositores.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container map-layout">
+          <div class="map-wrap">
+            <svg
+              id="floorMap"
+              viewBox="0 0 640 420"
+              role="img"
+              aria-label="Mapa interactivo del predio ferial"
+            >
+              <rect x="0" y="0" width="640" height="420" fill="#F1EEFB"></rect>
+              <text x="20" y="30" class="map-label">
+                Pabellón A — Agroindustria
+              </text>
+              <g class="stand-group" data-pav="A">
+                <rect
+                  class="stand"
+                  data-stand="A1"
+                  data-exp="litio-jujuy"
+                  x="20"
+                  y="45"
+                  width="90"
+                  height="60"
+                ></rect>
+                <rect
+                  class="stand"
+                  data-stand="A2"
+                  data-exp="agronorte"
+                  x="120"
+                  y="45"
+                  width="90"
+                  height="60"
+                ></rect>
+                <rect
+                  class="stand"
+                  data-stand="A3"
+                  data-exp="valle-verde"
+                  x="220"
+                  y="45"
+                  width="90"
+                  height="60"
+                ></rect>
+              </g>
+              <text x="20" y="140" class="map-label">
+                Pabellón B — Tecnología
+              </text>
+              <g class="stand-group" data-pav="B">
+                <rect
+                  class="stand"
+                  data-stand="B1"
+                  data-exp="andes-soft"
+                  x="20"
+                  y="155"
+                  width="90"
+                  height="60"
+                ></rect>
+                <rect
+                  class="stand"
+                  data-stand="B2"
+                  data-exp="norte-robotica"
+                  x="120"
+                  y="155"
+                  width="90"
+                  height="60"
+                ></rect>
+                <rect
+                  class="stand"
+                  data-stand="B3"
+                  data-exp="voltio"
+                  x="220"
+                  y="155"
+                  width="90"
+                  height="60"
+                ></rect>
+              </g>
+              <text x="360" y="30" class="map-label">Pabellón C — Minería</text>
+              <g class="stand-group" data-pav="C">
+                <rect
+                  class="stand"
+                  data-stand="C1"
+                  data-exp="litio-jujuy-2"
+                  x="360"
+                  y="45"
+                  width="90"
+                  height="60"
+                ></rect>
+                <rect
+                  class="stand"
+                  data-stand="C2"
+                  data-exp="mineral-andino"
+                  x="460"
+                  y="45"
+                  width="90"
+                  height="60"
+                ></rect>
+                <rect
+                  class="stand"
+                  data-stand="C3"
+                  data-exp="geo-norte"
+                  x="360"
+                  y="115"
+                  width="190"
+                  height="60"
+                ></rect>
+              </g>
+              <text x="20" y="250" class="map-label">
+                Salón Norte — Auditorios
+              </text>
+              <g class="stand-group" data-pav="AUD">
+                <rect
+                  class="stand stand-auditorio"
+                  data-stand="AUD-B"
+                  data-exp="auditorio-b"
+                  x="20"
+                  y="265"
+                  width="230"
+                  height="70"
+                ></rect>
+                <rect
+                  class="stand stand-auditorio"
+                  data-stand="AUD-N"
+                  data-exp="salon-norte"
+                  x="270"
+                  y="265"
+                  width="230"
+                  height="70"
+                ></rect>
+              </g>
+              <text x="20" y="360" class="map-label">
+                Explanada — Sponsors y accesos
+              </text>
+              <rect
+                class="stand stand-sponsor"
+                data-stand="SP"
+                data-exp="sponsors-zone"
+                x="20"
+                y="375"
+                width="480"
+                height="30"
+              ></rect>
+            </svg>
+          </div>
+          <aside class="map-panel" id="mapPanel">
+            <p class="map-panel-hint">
+              Elegí un stand en el mapa para ver el detalle acá.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <img
+              src="assets/img/expojuy26_horizontal.png"
+              alt="ExpoJuy 2026"
+              style="
+                height: 30px;
+                filter: brightness(0) invert(1);
+                margin-bottom: 1rem;
+              "
+            />
+            <p>
+              La feria de innovación, tecnología y producción del Norte
+              Argentino.
+            </p>
+            <div class="organiza-row">
+              <span>Organiza</span>
+              <img
+                src="assets/img/logo_camcomext.png"
+                alt="Cámara de Comercio Exterior de Jujuy"
+                style="height: 28px; filter: brightness(0) invert(1)"
+              />
+            </div>
+          </div>
+          <div>
+            <h4>Explorar</h4>
+            <ul>
+              <li><a href="expositores.html">Expositores</a></li>
+              <li><a href="agenda.html">Agenda de actividades</a></li>
+              <li><a href="mapa.html">Mapa del predio</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Participar</h4>
+            <ul>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li>
+                <a href="contacto.html#expositor">Sumate como expositor</a>
+              </li>
+              <li><a href="contacto.html#faq">Preguntas frecuentes</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Sede</h4>
+            <p>
+              Predio Ferial de Jujuy<br />Libertador General San Martín,
+              Jujuy<br />Argentina
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© 2026 ExpoJuy — Cámara de Comercio Exterior de Jujuy. Propuesta
+            conceptual — Desafío Digital ExpoJuy 2026.</span
+          >
+          <div class="social-row">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
